@@ -6,7 +6,7 @@ ePackage {
     
     eAnnotation {
 
-        source "http://www.eclipse.org/emf/2002/Ecore"
+        source "http://www.eclipse.org/emf/2002/GenModel"
 
         details {
 
@@ -38,7 +38,7 @@ ePackage {
 
             eAnnotation {
 
-                source "http://www.eclipse.org/emf/2002/Ecore"
+                source "http://www.eclipse.org/emf/2002/GenModel"
 
                 details {
 
