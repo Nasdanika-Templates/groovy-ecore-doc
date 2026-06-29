@@ -42,7 +42,7 @@ jobs:
           chmod u+x nsd          
           pwd
           ls ..
-          ./nsd model ../family.ecore.md ecore doc --diagram=family.drawio --doc-stubs --doc-dir=../doc save ../family.xmi
+          ./nsd model ../family.ecore.groovy ecore doc --diagram=family.drawio --doc-stubs --doc-dir=../doc save ../family.xmi
       - name: Generate Ecore site
         working-directory: nsd-cli
         run: |
