@@ -12,13 +12,13 @@ ePackage {
 
             key "documentation"
             value '''
-                Family model is used to demonstrate different Nasdanika technologies such as:
+            Family model is used to demonstrate different Nasdanika technologies such as:
 
-                * Generating of metamodel (Ecore) documentation like this one
-                * Loading of models from MS Excel and Drawio diagrams
-                * Generation of HTML sites from loaded models
+            * Generating of metamodel (Ecore) documentation like this one
+            * Loading of models from MS Excel and Drawio diagrams
+            * Generation of HTML sites from loaded models
 
-                The model was created to mimic the model from [Eclipse Sirius Basic Family](https://wiki.eclipse.org/Sirius/Tutorials/BasicFamily) tutorial.
+            The model was created to mimic the model from [Eclipse Sirius Basic Family](https://wiki.eclipse.org/Sirius/Tutorials/BasicFamily) tutorial.
             '''.stripIndent().trim()
 
         }
