@@ -1,6 +1,6 @@
-# Markdown Ecore Documentation
+# Groovy Ecore Documentation
 
-This is a template repository for generating ecore documentation from markdown documentation mapped to ecore metamodels.
+This is a template repository for generating ecore documentation from Groovy DSL for Ecore.
 Documentation can be generated manually using [Nasdanika CLI](https://docs.nasdanika.org/nsd-cli/index.html) and then published to GitHub pages if desired.
 It can also be generated using GitHub actions calling Nasdanika CLI. 
 
@@ -18,7 +18,7 @@ To generate and commit doc stubs you will have to either clone the repository to
 Once you install Nasdanika CLI the first step is to generate the web site ([HTML Application](https://html-app.models.nasdanika.org/index.html)) model with [model/ecore/doc/save](https://docs.nasdanika.org/nsd-cli/nsd/model/ecore/doc/save/index.html) command pipeline:
 
 ```
-nsd model family.ecore.md ecore doc --diagram=family.drawio --doc-stubs --doc-dir=doc save family.xmi
+nsd model family.ecore.groovy ecore doc --diagram=family.drawio --doc-stubs --doc-dir=doc save family.xmi
 ```
 
 Remove `--diagram=family.drawio` if you've already generated a diagram file before and manually adjusted it. 
@@ -39,9 +39,9 @@ You can also mount it to a larger site.
 
 GitHub actions generate a documentation site, a diagram, and a doc stubs zip:
 
-* Documentation: https://nasdanika-templates.github.io/markdown-ecore-doc/index.html
-* Generated diagram file: https://nasdanika-templates.github.io/markdown-ecore-doc/family.drawio
-* Doc stubs zip: https://nasdanika-templates.github.io/markdown-ecore-doc/doc-stubs.zip - unzip and upload using GitHub Web interface if you are not using a local repository clone.
+* Documentation: https://nasdanika-templates.github.io/groovy-ecore-doc/index.html
+* Generated diagram file: https://nasdanika-templates.github.io/groovy-ecore-doc/family.drawio
+* Doc stubs zip: https://nasdanika-templates.github.io/groovy-ecore-doc/doc-stubs.zip - unzip and upload using GitHub Web interface if you are not using a local repository clone.
 
 ## Upgrade to code generation
 
