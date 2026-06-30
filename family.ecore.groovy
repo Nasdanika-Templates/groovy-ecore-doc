@@ -56,7 +56,7 @@ ePackage {
     eClass {
 
         name 'Family'
-        eSuperTypes [namedElement]
+        eSuperTypes namedElement
 
         eAnnotation {
 
@@ -86,7 +86,7 @@ ePackage {
         eReference {
 
             name 'members'
-            eType 'Person'
+            eType "/eClassifiers[name='Person']"
             lowerBound 2
             upperBound -1
 
@@ -110,8 +110,8 @@ ePackage {
     def person = eClass {
 
         name 'Person'
-        eSuperTypes [namedElement]
-
+        eSuperTypes namedElement
+        eSuperTypes "/eClassifiers[name='NamedElement']"
 
         eAnnotation {
 
@@ -158,10 +158,10 @@ ePackage {
         eReference {
 
             name 'parents'
-            eType 'Person'
+            eType "/eClassifiers[name='Person']"
             lowerBound 0
             upperBound 2
-            eOpposite 'children'            
+            eOpposite "/eClassifiers[name='Person']/eStructuralFeatures[name='children']"
 
             eAnnotation {
 
@@ -181,10 +181,10 @@ ePackage {
         eReference {
 
             name 'children'
-            eType 'Person'
+            eType "/eClassifiers[name='Person']"
             lowerBound 0
             upperBound -1
-            eOpposite 'parents'            
+            eOpposite "/eClassifiers[name='Person']/eStructuralFeatures[name='parents']"
 
             eAnnotation {
 
@@ -204,7 +204,7 @@ ePackage {
         eReference {
 
             name 'father'
-            eType 'Man'
+            eType "/eClassifiers[name='Man']"
             lowerBound 0
             upperBound 1
             derived true
@@ -217,6 +217,28 @@ ePackage {
 
                     key "documentation"
                     value 'Person father'
+
+                }
+
+            }
+        }
+
+        eReference {
+
+            name 'mother'
+            eType "/eClassifiers[name='Woman']"
+            lowerBound 0
+            upperBound 1
+            derived true
+
+            eAnnotation {
+
+                source "http://www.eclipse.org/emf/2002/GenModel"
+
+                details {
+
+                    key "documentation"
+                    value 'Person mother'
 
                 }
 
